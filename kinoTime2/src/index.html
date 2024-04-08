@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <header>
+        <div class="shadow-lg shadow-cyan-500/50">
+            <div class="container mx-auto w-[1280px] flex justify-between items-center py-8 ">
+                <div>
+                    <img src="./assets/Лого.svg" alt="">
+                </div>
+
+                <div class="select-none flex justify-between items-center gap-3 relative cursor-pointer" id="menu">
+                    <img src="./assets/photo_2023-10-04_12-33-48.jpg" alt="my Photo" class="w-12 rounded-full">
+                    <p>Sunnatilla</p>
+                    <button><img src="./assets/arrow-point-to-right 2.svg" alt="arrow down"></button>
+
+                    <div id="exit"
+                        class="hidden absolute right-0 bg-white bottom-[-60px] shadow-lg shadow-cyan-500/50 w-full p-4">
+                        <p class="flex gap-4 items-center">
+                            <img src="./assets/exit 1.png" alt="">
+                            Exit
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="text-center mt-12">
+                <input type="text" id="search" placeholder="search movie"
+                    class="px-4 py-2 w-[480px] border-2 border-gray-300 rounded-xl focus:outline-none">
+            </div>
+
+            <div class="container mx-auto w-[1280px] mt-10 flex justify-between">
+                <div>
+                    <div class="flex items-center gap-[22px] mb-[30px]">
+                        <img src="./assets/home (4) 1.png" alt="logo" />
+                        <p>Главная</p>
+                    </div>
+                    <div class="flex items-center gap-[22px] mb-[30px]">
+                        <img src="./assets/user (2) 1.png" alt="logo" />
+                        <p>Профиль</p>
+                    </div>
+                    <div class="flex items-center gap-[22px] mb-[30px]">
+                        <img src="./assets/mail 1.png" alt="logo" />
+                        <p>Мои запросы</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-12 rowBlock flex-wrap">
+                    <!-- Cardlar -->
+                </div>
+            </div>
+
+            <div class="text-center flex gap-12 justify-center my-12">
+                <button class="border-2 px-4 py-2 hover:bg-slate-300" id="prev">
+                    < </button>
+                        <button class="border-2 px-4 py-2 hover:bg-slate-300" id="next"> > </button>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./mini.js"></script>
+    <script type="module" src="./signOut.js"></script>
+</body>
+
+</html>

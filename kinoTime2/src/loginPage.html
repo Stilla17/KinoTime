@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+    <div
+        class="max-w-[1200px] mx-auto my-[20px] px-[90px] py-[80px] bg-cyan-300 rounded-[40px] flex justify-evenly items-center">
+        <div>
+            <img class="w-[500px]" src="./assets/Horror movie-rafiki.svg" alt="Horror movies">
+        </div>
+        <div>
+            <h1 class="text-[64px] font-bold text-center">Sign in</h1>
+            <input class="block w-full py-2 px-4 my-8 rounded-lg focus:outline-none" id="login" type="text"
+                placeholder="Your Name">
+            <input class="block w-full py-2 px-4 mb-8 rounded-lg focus:outline-none" id="password" type="password"
+                placeholder="Password">
+            <div class="chpok"></div>
+
+            <div>
+                <button id="signIn"
+                    class="bg-orange-500 text-white py-2 mb-4 px-12 w-full rounded-full active:bg-orange-300 hover:scale-110">
+                    Sign In
+                </button>
+
+                <button id="signUp"
+                    class="bg-orange-500 text-white py-2 mb-4 px-12 w-full rounded-full active:bg-orange-300 hover:scale-110">
+                    Sign Up
+                </button>
+            </div>
+
+            <button id="signInWithGoogle"
+                class="flex gap-12 bg-orange-500 text-white py-2 px-12 rounded-md active:bg-orange-300">
+                <img src="./assets/google.svg" alt="Google">
+                Sign in with Google
+            </button>
+        </div>
+    </div>
+
+
+    <script type="module" src="./signIn.js"></script>
+</body>
+
+</html>
